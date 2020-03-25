@@ -16,7 +16,7 @@ public class InterpreteurTest
 	@Test
 	public void testInit()
 	{
-		Interpreteur it = Interpreteur.Init();
+		Interpreteur it = Interpreteur.init();
 		assertNotNull(it.commande);
 	}
 }

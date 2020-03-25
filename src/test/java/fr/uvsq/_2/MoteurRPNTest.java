@@ -12,14 +12,14 @@ public class MoteurRPNTest
 	@Test
 	public void InitTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		assertNotNull(it.commande);
 	}
 	
 	@Test
 	public void addOperrandeTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		Stack<Integer> test = new Stack<Integer>();
 		test.push(1);
@@ -29,7 +29,7 @@ public class MoteurRPNTest
 	@Test
 	public void addTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		it.addOperande(1);
 		it.executeCommande("+");
@@ -41,7 +41,7 @@ public class MoteurRPNTest
 	@Test
 	public void suppTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		it.addOperande(1);
 		it.executeCommande("-");
@@ -53,7 +53,7 @@ public class MoteurRPNTest
 	@Test
 	public void multTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		it.addOperande(1);
 		it.executeCommande("*");
@@ -65,7 +65,7 @@ public class MoteurRPNTest
 	@Test
 	public void divTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		it.addOperande(1);
 		it.executeCommande("/");
@@ -77,7 +77,7 @@ public class MoteurRPNTest
 	@Test
 	public void undoTest()
 	{
-		MoteurRPN it = MoteurRPN.Init();
+		MoteurRPN it = MoteurRPN.init();
 		it.addOperande(1);
 		it.addOperande(1);
 		it.executeCommande("undo");
