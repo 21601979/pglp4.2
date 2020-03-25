@@ -28,7 +28,7 @@ public class Interpreteur
 	public static Interpreteur Init()
 	{
 		Interpreteur it = new Interpreteur();
-		it.addCommande("quit",()->System.out.println("quit") );
+		it.addCommande("quit",()->System.out.println("stop") );
 		it.addCommande("undo",()->System.out.println("undo") );
 		return it;
 	}
