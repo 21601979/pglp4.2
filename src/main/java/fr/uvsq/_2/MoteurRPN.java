@@ -62,8 +62,13 @@ public class MoteurRPN extends Interpreteur
 		affiche();
 	}
 	
+	public static String ToString()
+	{
+		return p.toString();
+	}
+	
 	public static void affiche() 
 	{
-		System.out.println(p);
+		System.out.println(MoteurRPN.ToString());
 	}
 }

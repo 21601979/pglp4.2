@@ -11,7 +11,7 @@ public class SaisieRPN
 	{
 		scan = new Scanner(System.in);
 		mot = MoteurRPN.Init();
-		
+		System.out.print(mot.commande);
 		while(MoteurRPN.stop != 1)
 		{System.out.println("ok");
 			if(scan.hasNextInt())
